@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>הרשמה</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="register.js" defer></script> <!-- טוען את register.js עם defer -->
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Shos Shop</div>
+    <nav>
+      <a href="cart.html">🛒 עגלת קניות</a>
+      <a href="login.html">🔐 התחברות / הרשמה</a>
+    </nav>
+  </header>
+
+  <div class="login-container">
+    <h2>📝 הרשמה</h2>
+    <form id="registerForm">
+      <input type="email" id="register-email" placeholder="אימייל" required>
+      <input type="password" id="register-password" placeholder="סיסמה" required>
+      <button type="submit">הרשם</button>
+    </form>
+    <p>כבר רשום? <a href="login.html">התחבר</a></p>
+  </div>
+</body>
+</html>

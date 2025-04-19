@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>Shos Shop - מוצרים</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+  <header class="navbar">
+    <div class="logo">
+      
+      <span>Shoe store</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">🏠 דף הבית</a>
+      <a href="cart.html">🛒 עגלת קניות</a>
+      <a href="login.html">🔐 התחברות</a>
+    </nav>
+  </header>
+  
+
+  <h1 class="title">Shoe store</h1>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="public/images/AirGraee.webp" alt="Nike AirGraee">
+      <h3>Nike AirGraee</h3>
+      <p class="price">₪799</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>799</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c232"
+        
+        data-name="Nike AirGraee"
+        data-price="799">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/AirBlack.webp" alt="Nike AirBlack">
+      <h3>Nike AirBlack</h3>
+      <p class="price">₪699</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>699</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c233"
+        data-name="Nike AirBlack"
+        data-price="699">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/AirMulty.webp" alt="Nike AirMulty">
+      <h3>Nike AirMulty</h3>
+      <p class="price">₪799</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>799</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c234"
+        data-name="Nike AirMulty"
+        data-price="799">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/AirYellow.webp" alt="Nike AirYellow">
+      <h3>Nike AirYellow</h3>
+      <p class="price">₪599</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>599</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c235"
+        data-name="Nike AirYellow"
+        data-price="599">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/mrNewBalanceWhite.webp" alt="mrNewBalanceWhite">
+      <h3>mrNewBalanceWhite</h3>
+      <p class="price">₪659</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>659</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c236"
+        data-name="mrNewBalanceWhite"
+        data-price="659">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/NewBalanceBlack.webp" alt="NewBalanceBlack">
+      <h3>NewBalanceBlack</h3>
+      <p class="price">₪759</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>759</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c237"
+        data-name="NewBalanceBlack"
+        data-price="759">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/NewBalanceBlue.jpg" alt="NewBalanceBlue">
+      <h3>NewBalanceBlue</h3>
+      <p class="price">₪899</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>899</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c238"
+        data-name="NewBalanceBlue"
+        data-price="899">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/NewBalanceBrown.jpg" alt="NewBalanceBrown">
+      <h3>NewBalanceBrown</h3>
+      <p class="price">₪799</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>799</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c239"
+        data-name="NewBalanceBrown"
+        data-price="799">
+        הוסף לעגלה
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="public/images/NewBalanceSeaSalt.webp" alt="NewBalanceSeaSalt">
+      <h3>NewBalanceSeaSalt</h3>
+      <p class="price">₪899</p>
+      <label>כמות:</label>
+      <input type="number" class="qty-input" value="1" min="1">
+      <p class="total">סה״כ: ₪<span>899</span></p>
+      <button 
+        onclick="addToCart(this)"
+        data-id="67fe6ab9a2fb751aaf70c23a"
+        data-name="NewBalanceSeaSalt"
+        data-price="899">
+        הוסף לעגלה
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+
+ <!-- 🔻 Footer מתחיל כאן -->
+ <footer class="footer">
+  <div class="footer-content">
+    <div>
+      <h4>צור קשר</h4>
+      <p>✉️ contact@shosshop.com</p>
+      <p>📞 050-1234567</p>
+    </div>
+    <div>
+      <h4>עקבו אחרינו</h4>
+      <p>
+        <a href="#">📸 אינסטגרם</a> |
+        <a href="#">📘 פייסבוק</a> |
+        <a href="#">🎵 טיקטוק</a>
+      </p>
+    </div>
+    <div>
+      <h4>מידע</h4>
+      <p>
+        <a href="#">אודות</a> |
+        <a href="#">תנאים</a> |
+        <a href="#">שאלות נפוצות</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Shos Shop | נבנה באהבה על ידי רון הרוש 🧠</p>
+  </div>
+</footer>
+<!-- 🔺 Footer נגמר כאן -->
+
+</body>
+</html>

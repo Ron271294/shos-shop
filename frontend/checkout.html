@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>תשלום - Shos Shop</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span>Shoe store</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">🏠 דף הבית</a>
+      <a href="cart.html">🛒 עגלת קניות</a>
+      <a href="login.html">🔐 התחברות</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>🧾 טופס תשלום</h2>
+    <form id="checkout-form">
+      <label for="fullName">שם מלא:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="cardNumber">מספר כרטיס אשראי:</label>
+      <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
+
+      <label for="expiry">תוקף:</label>
+      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+      <button type="submit">💳 שלם עכשיו</button>
+    </form>
+  </div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
