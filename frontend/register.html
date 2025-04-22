@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>הרשמה</title>
   <link rel="stylesheet" href="style.css">
-  <script src="register.js" defer></script> <!-- טוען את register.js עם defer -->
+  <script src="register.js" defer></script> <!-- טוען את register.js -->
 </head>
 <body>
   <header class="navbar">
@@ -17,7 +17,8 @@
 
   <div class="login-container">
     <h2>📝 הרשמה</h2>
-    <form id="registerForm">
+    <!-- ✅ קישור לפונקציה registerUser -->
+    <form id="registerForm" onsubmit="registerUser(event)">
       <input type="email" id="register-email" placeholder="אימייל" required>
       <input type="password" id="register-password" placeholder="סיסמה" required>
       <button type="submit">הרשם</button>

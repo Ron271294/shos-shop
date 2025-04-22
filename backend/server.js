@@ -4,6 +4,10 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const connectDB = require("./db");
 
+require('dotenv').config();
+
+
+
 // טעינת משתני סביבה
 dotenv.config({ path: '../.env' });
 console.log("🔍 MONGO_URL:", process.env.MONGO_URL);
@@ -35,8 +39,33 @@ app.use("/api/auth", authRoutes);
 app.use("/api/checkout", checkoutRoutes);
 app.use("/api/users", userRoutes); // ✅ שימוש בנתיב משתמשים
 
+
+
+
+const devRoutes = require("./routes/dev.routes");
+app.use("/api/dev", devRoutes); // 🔧 נתיב לבדיקה בלבד
+
+
+
+
+
+
+
+
+
 // הפעלת השרת
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 השרת פעיל על פורט ${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
+

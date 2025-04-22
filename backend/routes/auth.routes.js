@@ -11,3 +11,25 @@ router.post("/register", authController.register);
 router.get("/me", authMiddleware, authController.getMe);
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
